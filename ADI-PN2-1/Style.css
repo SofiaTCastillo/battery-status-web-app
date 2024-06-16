@@ -1,0 +1,16 @@
+/* style.css */
+.animation {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.animation.disabled {
+    animation: none;
+}
